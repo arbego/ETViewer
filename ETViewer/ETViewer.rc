@@ -1,0 +1,869 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "ETViewer\n\nETViewer\n\n\nETViewer.Document\nETViewer.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "ETViewer"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "MAY"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "DESP"
+    ID_INDICATOR_OVR        "SOB"
+    ID_INDICATOR_REC        "GRB"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open any supported file\nOpen"
+    ID_FILE_CLOSE           "Close the document\nClose"
+    ID_FILE_SAVE            "Save all or selected traces to file\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_EXIT             "Exits the application; saves documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open file"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch to previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window panels\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Clear the selection\nClear"
+    ID_EDIT_CLEAR_ALL       "Clear all\nClear all"
+    ID_EDIT_CUT             "Cuts the selection and copies to clipboard\nCut"
+    ID_EDIT_PASTE           "Pastes the clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specified text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select entire document\nSelect all"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the last action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle Toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the statusbar\nToggle Statusbar"
+    ID_VIEW_AUTOARRANGE     "Arrange icons on a grid"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Resize the window"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Minimize the window"
+    AFX_IDS_SCMAXIMIZE      "Maximize the window"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close active windows and prompt to save"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window"
+    AFX_IDS_SCTASKLIST      "Activate task list"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_SMALLICON       "Show items using small icons\nSmall Icons"
+    ID_VIEW_LARGEICON       "Show items using large icons\nLarge Icons"
+    ID_VIEW_LIST            "Show items in a list\nList"
+    ID_VIEW_DETAILS         "View detailed information about each item in the window\nDetails"
+    ID_VIEW_LINEUP          "Arrange items on a grid"
+    ID_VIEW_BYNAME          "Arrange items by name"
+END
+
+#endif    // English resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Spain, Traditional Sort) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MARKER              ICON                    "res\\ico00001.ico"
+IDI_HOLLOW_BIG          ICON                    "res\\hollow1.ico"
+IDI_HOLLOW              ICON                    "res\\marker.ico"
+IDI_OPEN_FILE           ICON                    "res\\openfile.ico"
+IDI_CLOSE_SMALL         ICON                    "res\\in_call1.ico"
+IDI_SOURCE_FILE         ICON                    "res\\Source File Small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_TRACE_LIST MENU
+BEGIN
+    POPUP "Traces"
+    BEGIN
+        MENUITEM "Open Source File",            ID_TRACE_LIST_OPEN_SOURCE_FILE
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy Selection",             ID_TRACE_LIST_COPY_SELECTION
+        MENUITEM "&Copy All",                   ID_TRACE_LIST_COPY_ALL
+        MENUITEM "Delete Selection",            ID_TRACE_LIST_DELETE_SELECTION
+        MENUITEM "Delete All",                  ID_TRACE_LIST_DELETE_ALL
+        MENUITEM SEPARATOR
+        POPUP "Font"
+        BEGIN
+            MENUITEM "Bigger\t(Ctrl+Wheel Up)",     ID_FONT_BIGGER
+            MENUITEM "Smaller\t(Ctrl+Wheel Down)",  ID_FONT_SMALLER
+        END
+        MENUITEM SEPARATOR
+    END
+END
+
+IDM_FILE_VIEWER MENU
+BEGIN
+    POPUP "Source"
+    BEGIN
+        MENUITEM "Open As Source File",         ID_OPEN_AS_SOURCE_FILE
+    END
+END
+
+IDM_TRACE_LIST_EDIT MENU
+BEGIN
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Get &Error Description",      ID_GET_ERROR_DESCRIPTION
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy",                       ID_COPY
+        MENUITEM "Select &All",                 ID_SELECT_ALL
+    END
+END
+
+IDM_PROVIDER_TREE MENU
+BEGIN
+    POPUP "Providers"
+    BEGIN
+        MENUITEM "Add Provider ...",            ID_PROVIDER_TREE_ADD_PROVIDER
+        MENUITEM SEPARATOR
+        MENUITEM "Reload Provider",             ID_PROVIDER_TREE_RELOAD_PROVIDER
+        MENUITEM "Reload All Providers",        ID_PROVIDER_TREE_RELOAD_ALL_PROVIDERS
+        MENUITEM SEPARATOR
+        MENUITEM "Start Tracing",               ID_PROVIDER_TREE_START
+        MENUITEM "Stop Tracing",                ID_PROVIDER_TREE_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "Set All Flags",               ID_PROVIDER_TREE_SET_ALL_FLAGS
+        MENUITEM "Clear All Flags",             ID_PROVIDER_TREE_CLEAR_ALL_FLAGS
+        MENUITEM SEPARATOR
+        POPUP "All Providers"
+        BEGIN
+            MENUITEM "Start Tracing",               ID_PROVIDER_TREE_START_ALL
+            MENUITEM "Stop Tracing",                ID_PROVIDER_TREE_STOP_ALL
+            MENUITEM SEPARATOR
+            POPUP "Flags"
+            BEGIN
+                MENUITEM "Set All",                     ID_PROVIDER_TREE_SET_ALL_FLAGS_ALL
+                MENUITEM "Clear All",                   ID_PROVIDER_TREE_CLEAR_ALL_FLAGS_ALL
+            END
+            POPUP "Level"
+            BEGIN
+                MENUITEM "TRACE_LEVEL_FATAL",           ID_PROVIDER_TREE_ALL_FATAL
+                MENUITEM "TRACE_LEVEL_ERROR",           ID_PROVIDER_TREE_ALL_ERROR
+                MENUITEM "TRACE_LEVEL_WARNING",         ID_PROVIDER_TREE_ALL_WARNING
+                MENUITEM "TRACE_LEVEL_INFORMATION",     ID_PROVIDER_TREE_ALL_INFORMATION
+                MENUITEM "TRACE_LEVEL_VERBOSE",         ID_PROVIDER_TREE_ALL_VERBOSE
+                MENUITEM "TRACE_LEVEL_RESERVED6",       ID_PROVIDER_TREE_ALL_RESERVED6
+                MENUITEM "TRACE_LEVEL_RESERVED7",       ID_PROVIDER_TREE_ALL_RESERVED7
+                MENUITEM "TRACE_LEVEL_RESERVED8",       ID_PROVIDER_TREE_ALL_RESERVED8
+                MENUITEM "TRACE_LEVEL_RESERVED9",       ID_PROVIDER_TREE_ALL_RESERVED9
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Delete Provider",             ID_PROVIDER_TREE_DELETE_PROVIDER
+        MENUITEM "Delete All Providers",        ID_PROVIDER_TREE_DELETE_ALL_PROVIDERS
+    END
+END
+
+IDM_HIGHLIGHT_FILTERS MENU
+BEGIN
+    POPUP "Highlight Filters"
+    BEGIN
+        MENUITEM "Add Filter",                  ID_HIGHLIGHT_FILTERS_ADD
+        MENUITEM SEPARATOR
+        MENUITEM "Move Up\t(Ctrl+Up)",          ID_HIGHLIGHT_FILTERS_UP
+        MENUITEM "Move Down\t(Ctrl+Down)",      ID_HIGHLIGHT_FILTERS_DOWN
+        MENUITEM SEPARATOR
+        MENUITEM "Delete Filter",               ID_HIGHLIGHT_FILTERS_DELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HIGHLIGHT_FILTERS_EDITOR DIALOGEX 0, 0, 351, 182
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "HighLight Filters"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,3,165,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,57,165,50,14
+    CONTROL         "List1",IDC_LW_FILTERS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,3,3,321,156
+    PUSHBUTTON      "Up",IDC_BT_UP,330,3,16,14,BS_ICON
+    PUSHBUTTON      "Dw",IDC_BT_DOWN,330,144,16,14,BS_ICON
+END
+
+IDD_FILTERS_EDITOR DIALOG 0, 0, 351, 182
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Filters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Ok",IDOK,3,165,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,57,165,50,14
+    CONTROL         "List1",IDC_LW_FILTERS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,3,3,321,156
+    PUSHBUTTON      "Up",IDC_BT_UP,330,3,16,14,BS_ICON
+    PUSHBUTTON      "Dw",IDC_BT_DOWN,330,144,16,14,BS_ICON
+END
+
+IDD_SOURCE_FILE_VIEWER DIALOGEX 0, 0, 291, 263
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPCHILDREN
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_ED_FILE,"RICHEDIT",TCS_HOTTRACK | TCS_VERTICAL | TCS_BUTTONS | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,0,0,291,249
+    EDITTEXT        IDC_ED_FULL_PATH,3,249,213,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_ED_LINE,222,249,67,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_SOURCE_FILE_CONTAINER DIALOGEX 0, 0, 502, 347
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "ETViewer - Source Files"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TC_SOURCE_FILES,"SysTabControl32",TCS_TOOLTIPS,0,18,498,12
+    PUSHBUTTON      "Button2",IDC_BT_CLOSE_FILE,489,0,9,11,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_BT_OPEN_FILE,0,3,15,14,BS_ICON
+    PUSHBUTTON      "",IDC_BT_FIND,27,3,15,14,BS_ICON
+    PUSHBUTTON      "",IDC_BT_COPY,45,3,15,14,BS_ICON
+    PUSHBUTTON      "Open Recent File ...",IDC_BT_RECENT_FILE,72,3,75,14
+END
+
+IDD_FIND_DIALOG DIALOGEX 30, 73, 238, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "Fi&nd what:",-1,4,8,42,8
+    DEFPUSHBUTTON   "&Find Next",IDOK,183,6,50,14,WS_GROUP
+    CONTROL         "Match &case",1041,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,27,64,12
+    GROUPBOX        "Direction",1072,120,27,57,45,WS_GROUP
+    CONTROL         "&Up",1056,"Button",BS_AUTORADIOBUTTON | WS_GROUP,124,39,25,12
+    CONTROL         "&Down",1057,"Button",BS_AUTORADIOBUTTON,123,54,35,12
+    PUSHBUTTON      "&Mark All",IDC_BT_MARK_ALL,183,24,50,14,WS_GROUP
+    PUSHBUTTON      "&Delete All",IDC_BT_DELETE_ALL,183,42,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,183,66,50,14
+    CONTROL         "Match &whole word only",1040,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_GROUP | WS_TABSTOP,96,21,15,12
+    PUSHBUTTON      "&Help",1038,84,21,9,14,NOT WS_VISIBLE
+    COMBOBOX        IDC_CO_TEXT_TO_FIND,48,6,129,135,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Find in Process Id / Name",IDC_CB_FIND_PID_NAME,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,6,42,105,12
+    CONTROL         "Find in Trace Text",IDC_CB_FIND_IN_TRACE_TEXT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,6,57,78,12
+END
+
+IDD_SAVEALLTRACESQUESTIONDIALOG DIALOGEX 30, 73, 232, 39
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ETViewer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Save ALL Traces",IDOK,3,21,111,14,WS_GROUP
+    PUSHBUTTON      "Save SELECTED Traces",IDC_BT_SELECTED,120,21,107,14
+    CTEXT           "Please specify wich traces you want to save:",IDC_STATIC,0,0,231,18,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_HIGHLIGHT_FILTERS_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_FILTERS_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_SOURCE_FILE_VIEWER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_SOURCE_FILE_CONTAINER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 495
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    32822                   "Move &Up"
+END
+
+#endif    // Spanish (Spain, Traditional Sort) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Spain, International Sort) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ETViewer.ico"
+IDI_ETL_ICON            ICON                    "res\\idr_main.ico"
+IDR_ETViewerTYPE        ICON                    "res\\ETViewerDoc.ico"
+IDI_CLEAR_SELECTED_EVENTS ICON                    "res\\icon6.ico"
+IDI_CLEAR_EVENTS        ICON                    "res\\icon5.ico"
+IDI_CAPTURE_STOP        ICON                    "res\\icon4.ico"
+IDI_CAPTURE_START       ICON                    "res\\icon3.ico"
+IDI_SCROLL_ENABLED      ICON                    "res\\ico00002.ico"
+IDI_SCROLL_DISABLED     ICON                    "res\\icon8.ico"
+IDI_UP                  ICON                    "res\\icon12.ico"
+IDI_DOWN                ICON                    "res\\icon11.ico"
+IDI_HIGHLIGHT_FILTERS   ICON                    "res\\ico00004.ico"
+IDI_FILTERS             ICON                    "res\\ico00003.ico"
+IDI_ERRORLOOKUP         ICON                    "res\\icon1.ico"
+IDI_COPY                ICON                    "res\\icon10.ico"
+IDI_FIND                ICON                    "res\\icon13.ico"
+IDI_PLAY                ICON                    "res\\play.ico"
+IDI_PAUSE               ICON                    "res\\pause.ico"
+IDI_UNCHECKED           ICON                    "res\\unchecked.ico"
+IDI_CHECKED             ICON                    "res\\checked.ico"
+IDI_FLAGS               ICON                    "res\\flags.ico"
+IDI_MODULE              ICON                    "res\\modules.ico"
+IDI_LEVEL               ICON                    "res\\level.ico"
+IDI_SELECTED            ICON                    "res\\selected.ico"
+IDI_SAVE                ICON                    "res\\icon7.ico"
+IDI_SHOW_HIGHLIGHT_PANEL ICON                    "res\\ShowHighLightPanel.ico"
+IDI_SHOW_HIGHLIGHT_PANEL1 ICON                    "res\\show_hig.ico"
+IDI_SHOW_HIGHLIGHT_PANEL2 ICON                    "res\\ico00005.ico"
+IDI_PLAY_BLOCKED        ICON                    "res\\playblocked.ico"
+IDI_RECORD              ICON                    "res\\record.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Log To File...\tCtrl+L",      ID_FILE_LOGTOFILE
+        MENUITEM "Stop Logging to File",        ID_FILE_STOPLOGGINTOFILE
+        MENUITEM "Close Log (.etl)",            ID_FILE_CLOSELOG
+        MENUITEM SEPARATOR
+        MENUITEM "Save Trace&s\tCtrl+S",        ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        POPUP "Recent PDBs"
+        BEGIN
+            MENUITEM "---",                         ID_RECENTPDBS_
+        END
+        POPUP "Recent Sources"
+        BEGIN
+            MENUITEM "---",                         ID_RECENTSOURCES_
+        END
+        POPUP "Recent Logs (.etl)"
+        BEGIN
+            MENUITEM "---",                         ID_RECENTLOGS_
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Find\tCtrl+F",               ID_EDIT_FIND, INACTIVE
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM SEPARATOR
+        MENUITEM "Clear\tCtrl+X",               ID_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Settings",                    ID_EDIT_SETTINGS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ETViewer...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 298, 79
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ETViewer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,12,12,20,20
+    LTEXT           "ETViewer Version 0.9",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Javier Martín García.  ",IDC_STATIC,40,25,69,8
+    DEFPUSHBUTTON   "Ok",IDOK,241,7,50,16,WS_GROUP
+    RTEXT           "Feature requests or bug reports :",IDC_STATIC,22,58,110,8,SS_NOPREFIX
+    RTEXT           "Contact:",IDC_STATIC,22,47,110,8,SS_NOPREFIX
+    LTEXT           "etviewer@gmail.com",IDC_STATIC,141,47,134,8,SS_NOPREFIX
+    LTEXT           "http://etviewer.codeplex.com/",IDC_STATIC,141,58,134,8,SS_NOPREFIX
+END
+
+IDD_MAIN_DIALOG_BAR DIALOGEX 0, 0, 301, 16
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Vaciar",IDC_BT_CLEAR,75,1,16,14,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "Filtros",IDC_BT_HIGHLIGHT_FILTERS,140,1,16,14,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "Filtros",IDC_BT_FIND,158,1,16,14,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "Filtros",IDC_BT_SAVE,185,1,16,14,BS_ICON | NOT WS_TABSTOP
+    EDITTEXT        IDC_ED_ERRORLOOKUP,215,1,64,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "?",IDC_BT_ERRORLOOKUP,279,1,21,14,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "",IDC_BT_ENSURE_VISIBLE,111,1,16,14,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "Vaciar",IDC_BT_CLEAR_SELECTED,93,1,16,14,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "Vaciar",IDC_BT_OPEN_FILE,0,1,16,14,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "Vaciar",IDC_BT_SHOW_SOURCE_CONTAINER,18,1,16,14,BS_ICON | NOT WS_TABSTOP
+    PUSHBUTTON      "Vaciar",IDC_BT_START_STOP_CAPTURE,47,1,16,14,BS_ICON | NOT WS_TABSTOP
+END
+
+IDD_FILTER_DIALOG_BAR DIALOGEX 0, 0, 332, 16
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_CAPTURE_START,IDC_ST_INCLUDE_FILTER,0,0,20,20,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    ICON            IDI_CAPTURE_STOP,IDC_ST_EXCLUDE_FILTER,167,0,20,20,SS_CENTERIMAGE,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_CB_INCLUDE_FILTER,24,2,138,129,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_EXCLUDE_FILTER,193,1,139,132,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 340, 258
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Source File Paths",IDC_STATIC,7,7,329,115
+    CONTROL         "",IDC_LW_SOURCE_PATHS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,20,291,75
+    PUSHBUTTON      "Up",IDC_BT_UP,311,20,16,14,BS_ICON
+    PUSHBUTTON      "Dw",IDC_BT_DOWN,311,80,16,14,BS_ICON
+    PUSHBUTTON      "Add...",IDC_BT_ADD,12,99,50,14
+    PUSHBUTTON      "Remove",IDC_BT_REMOVE,64,99,50,14
+    GROUPBOX        "File Associations",IDC_STATIC,6,126,186,61
+    CONTROL         "Associate with PDB (.pdb) Files ",IDC_CB_ASSOCIATE_PDB,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,140,117,10
+    CONTROL         "Associate with ETL (.etl) Files ",IDC_CB_ASSOCIATE_ETL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,155,111,10
+    CONTROL         "Associate with Source (.cpp, .c, .h, .inl files)",IDC_CB_ASSOCIATE_SOURCES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,170,158,10
+    GROUPBOX        "PDB reload",IDC_STATIC,197,126,67,61
+    CONTROL         "Automatic",IDC_RB_PDB_RELOAD_AUTO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,203,140,48,10
+    CONTROL         "Ask",IDC_RB_PDB_RELOAD_ASK,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,203,154,27,10
+    CONTROL         "Disabled",IDC_RB_PDB_RELOAD_DISABLED,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,203,170,43,10
+    GROUPBOX        "Source reload",IDC_STATIC,270,126,66,61
+    CONTROL         "Automatic",IDC_RB_SOURCE_RELOAD_AUTO,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,276,140,48,10
+    CONTROL         "Ask",IDC_RB_SOURCE_RELOAD_ASK,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,276,154,27,10
+    CONTROL         "Disabled",IDC_RB_SOURCE_RELOAD_DISABLED,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,276,170,43,10
+    GROUPBOX        "Trace Presentation",IDC_STATIC,7,189,329,42
+    LTEXT           "Font:",IDC_STATIC,15,208,18,8
+    CTEXT           "Selected Font Sample",IDC_ST_FONT_FAMILY,35,202,191,21,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Select...",IDC_BT_SELECT_FONT,230,204,42,14
+    DEFPUSHBUTTON   "OK",IDOK,7,237,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,237,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_MAIN_DIALOG_BAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 300
+        TOPMARGIN, 1
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\ETViewer.rc2""  // recursos editados que no son de Microsoft Visual C++\r\n"
+    "#include ""afxres.rc""         // Componentes estándar\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_BUTTON32773
+    BUTTON      ID_BUTTON32774
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "L",            ID_FILE_LOGTOFILE,      VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04e4"
+        BEGIN
+            VALUE "CompanyName", "Javier Martín García"
+            VALUE "FileDescription", "Event Tracing Viewer"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "ETViewer"
+            VALUE "LegalCopyright", "Javier Martín García.  "
+            VALUE "OriginalFilename", "ETViewer.exe"
+            VALUE "ProductName", "ETViewer"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "ETViewer\n\nETViewer\n\n\nETViewer.Document\nETViewer.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "ETViewer"
+    AFX_IDS_IDLEMESSAGE     "Listo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "MAY"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "DESP"
+    ID_INDICATOR_OVR        "SOB"
+    ID_INDICATOR_REC        "GRB"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Crear un documento nuevo\nNuevo"
+    ID_FILE_OPEN            "Open any supported file\nOpen"
+    ID_FILE_CLOSE           "Cerrar el documento activo\nCerrar"
+    ID_FILE_SAVE            "Save all or selected traces to file\nSave"
+    ID_FILE_SAVE_AS         "Guardar el documento activo con un nombre nuevo\nGuardar como"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_EXIT             "Salir de la aplicación; permite guardar documentos\nSalir"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open file"
+    ID_FILE_MRU_FILE2       "Abrir este documento"
+    ID_FILE_MRU_FILE3       "Abrir este documento"
+    ID_FILE_MRU_FILE4       "Abrir este documento"
+    ID_FILE_MRU_FILE5       "Abrir este documento"
+    ID_FILE_MRU_FILE6       "Abrir este documento"
+    ID_FILE_MRU_FILE7       "Abrir este documento"
+    ID_FILE_MRU_FILE8       "Abrir este documento"
+    ID_FILE_MRU_FILE9       "Abrir este documento"
+    ID_FILE_MRU_FILE10      "Abrir este documento"
+    ID_FILE_MRU_FILE11      "Abrir este documento"
+    ID_FILE_MRU_FILE12      "Abrir este documento"
+    ID_FILE_MRU_FILE13      "Abrir este documento"
+    ID_FILE_MRU_FILE14      "Abrir este documento"
+    ID_FILE_MRU_FILE15      "Abrir este documento"
+    ID_FILE_MRU_FILE16      "Abrir este documento"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Cambiar al siguiente panel de la ventana\nPanel siguiente"
+    ID_PREV_PANE            "Cambiar al panel anterior de la ventana\nPanel anterior"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Dividir la ventana activa en paneles\nDividir"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Borrar la selección\nBorrar"
+    ID_EDIT_CLEAR_ALL       "Borrar todo\nBorrar todo"
+    ID_EDIT_CUT             "Cortar la selección y la coloca en el Portapapeles\nCortar"
+    ID_EDIT_PASTE           "Insertar el contenido del Portapapeles\nPegar"
+    ID_EDIT_REPEAT          "Repetir la última acción\nRepetir"
+    ID_EDIT_REPLACE         "Reemplazar el texto específico con texto diferente\nReemplazar"
+    ID_EDIT_SELECT_ALL      "Seleccionar todo el documento\nSeleccionar todo"
+    ID_EDIT_UNDO            "Deshacer la última acción\nDeshacer"
+    ID_EDIT_REDO            "Rehacer la acción previamente deshecha\nRehacer"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Mostrar u ocultar la barra de herramientas\nAlternar barra de herramientas"
+    ID_VIEW_STATUS_BAR      "Mostrar u ocultar la barra de estado\nAlternar barra de estado"
+    ID_VIEW_AUTOARRANGE     "Organizar los iconos en una cuadrícula."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Cambiar el tamaño de la ventana"
+    AFX_IDS_SCMOVE          "Cambiar la posición de la ventana"
+    AFX_IDS_SCMINIMIZE      "Reducir la ventana a un icono"
+    AFX_IDS_SCMAXIMIZE      "Aumentar la ventana al tamaño máximo"
+    AFX_IDS_SCNEXTWINDOW    "Cambiar a la ventana siguiente del documento"
+    AFX_IDS_SCPREVWINDOW    "Cambiar a la ventana anterior del documento"
+    AFX_IDS_SCCLOSE         "Cerrar la ventana activa y preguntar si desea guardar los documentos"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaurar la ventana a su tamaño normal"
+    AFX_IDS_SCTASKLIST      "Activar la Lista de tareas"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_SMALLICON       "Mostrar elementos usando iconos pequeños.\nIconos pequeños"
+    ID_VIEW_LARGEICON       "Mostrar elementos usando iconos grandes.\nIconos grandes"
+    ID_VIEW_LIST            "Mostrar elementos en forma de lista.\nLista"
+    ID_VIEW_DETAILS         "Mostrar información detallada sobre cada elemento de la ventana.\nDetalles"
+    ID_VIEW_LINEUP          "Organizar los iconos en una cuadrícula."
+    ID_VIEW_BYNAME          "Ordenar los iconos alfabéticamente."
+END
+
+#endif    // Spanish (Spain, International Sort) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#include "res\ETViewer.rc2"  // recursos editados que no son de Microsoft Visual C++
+#include "afxres.rc"         // Componentes estándar
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

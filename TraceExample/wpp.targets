@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0"
+xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup Label="ExtensionsToDeleteOnClean">
+        <ExtensionsToDeleteOnClean>*.tmh</ExtensionsToDeleteOnClean>
+    </PropertyGroup>
+    <ItemGroup>
+        <CoreCppClean Include="@(CoreCppClean);$(ProjectDir)">
+            <FilePatternsToDelete>*.tmh</FilePatternsToDelete>
+        </CoreCppClean>
+    </ItemGroup>
+    <ItemGroup>
+        <TraceWppSources Include="@(ClCompile)" Exclude="stdafx.cpp" />
+    </ItemGroup>
+    <Target Name="TraceWpp" BeforeTargets="ClCompile" Inputs="@(TraceWppSources)" Outputs="@(TraceWppSources -> '%(Filename).tmh')">
+        <Message Text="Generating .tmh file" />
+        <Exec Command="cd $(ProjectDir)" />
+        <Exec Command="&quot;$(FrameworkSDKDir)bin\x86\tracewpp.exe&quot; -cfgdir:$(SolutionDir)WppDDKFiles\rev1 -odir:. @(TraceWppSources, ' ')" />
+    </Target>
+</Project>
