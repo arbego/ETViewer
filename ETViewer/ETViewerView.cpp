@@ -1049,7 +1049,7 @@ void CETViewerView::Copy(bool bAllTraces)
     }
     GlobalUnlock(hglbCopy); 
 
-    if(SetClipboardData(CF_TEXT, hglbCopy)==NULL)
+    if (SetClipboardData(CF_UNICODETEXT, hglbCopy) == NULL)
     {MessageBox(_T("Failed to copy data to clipboard"),_T("Error"),MB_OK);}
 
     CloseClipboard();
@@ -1140,10 +1140,10 @@ void CETViewerView::GetTransferBuffer(int *pSize,TCHAR **buffer,bool bAllTraces)
             temp[templen+1]=_T('\n');
             temp[templen+2]=0;
             templen+=2;
-            memcpy((*buffer)+size,temp,templen);
+            memcpy((*buffer) + size, temp, templen * sizeof(TCHAR) + sizeof(TCHAR));
             size+=templen;
         }
-        *pSize=size;	
+        *pSize = size * sizeof(TCHAR) + sizeof(TCHAR);
     }
     else
     {
@@ -1193,10 +1193,10 @@ void CETViewerView::GetTransferBuffer(int *pSize,TCHAR **buffer,bool bAllTraces)
             temp[templen+1]=_T('\n');
             temp[templen+2]=0;
             templen+=2;
-            memcpy((*buffer)+size,temp,templen);
+            memcpy((*buffer) + size, temp, templen * sizeof(TCHAR) + sizeof(TCHAR));
             size+=templen;
         }
-        *pSize=size;	
+        *pSize = size * sizeof(TCHAR) + sizeof(TCHAR);
     }
 }
 
